@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920, initial-scale=1">
+<title>Senal</title>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<!-- ============ ARRANQUE ============ -->
+<div id="boot" class="boot">
+  <div class="boot__bars" aria-hidden="true">
+    <i style="background:#EEF1F6"></i><i style="background:#E3C24A"></i>
+    <i style="background:#12B8C8"></i><i style="background:#3FA86A"></i>
+    <i style="background:#B65CA8"></i><i style="background:#D6453B"></i>
+    <i style="background:#2B4FA8"></i><i style="background:#55606F"></i>
+  </div>
+  <div class="boot__mark">
+    <span class="boot__word">SEÑAL</span>
+    <span class="boot__by">App by Allan</span>
+  </div>
+</div>
+
+<!-- ============ EXPLORADOR ============ -->
+<div id="browse" class="browse">
+
+  <header class="top">
+    <div class="top__brand">
+      <span class="top__word">SEÑAL</span>
+      <span class="top__sub">TV abierta · Chile</span>
+    </div>
+    <div class="top__right">
+      <span id="clock" class="top__clock">--:--</span>
+      <span class="top__by">App by Allan</span>
+    </div>
+  </header>
+
+  <nav id="rail" class="rail" aria-label="Categorías"></nav>
+
+  <section class="stage">
+    <div id="track" class="track"></div>
+  </section>
+
+  <footer class="meta">
+    <div class="meta__num" id="mNum">01</div>
+    <div class="meta__text">
+      <h1 class="meta__name" id="mName">—</h1>
+      <p class="meta__line" id="mLine">—</p>
+    </div>
+    <div class="meta__pos">
+      <div class="tuner" aria-hidden="true"><span id="tunerFill" class="tuner__fill"></span></div>
+      <span class="meta__count" id="mCount">0 / 0</span>
+    </div>
+  </footer>
+
+  <div class="hints">
+    <span><b>◀ ▶</b> canal</span>
+    <span><b>▲ ▼</b> categoría</span>
+    <span><b>OK</b> ver</span>
+  </div>
+</div>
+
+<!-- ============ REPRODUCTOR ============ -->
+<div id="player" class="player">
+  <video id="video" class="player__video" preload="none" playsinline></video>
+
+  <div id="pBanner" class="banner">
+    <img id="pLogo" class="banner__logo" alt="">
+    <div class="banner__text">
+      <span class="banner__num" id="pNum">01</span>
+      <span class="banner__name" id="pName">—</span>
+      <span class="banner__group" id="pGroup">—</span>
+    </div>
+    <span class="banner__live" id="pLive">EN VIVO</span>
+  </div>
+
+  <div id="pStatus" class="status">
+    <div class="status__bars" aria-hidden="true">
+      <i></i><i></i><i></i><i></i>
+    </div>
+    <p class="status__msg" id="pMsg">Sintonizando…</p>
+    <p class="status__sub" id="pSub"></p>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
